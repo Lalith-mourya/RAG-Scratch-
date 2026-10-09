@@ -2,6 +2,7 @@ from pathlib import Path
 import logging
 
 from chunker import chunk_text
+from embedding import embed_chunks
 
 logging.basicConfig(
     level=logging.INFO,
@@ -71,5 +72,10 @@ def chunk_documents(documents, chunk_size=500, overlap=100):
     return chunk_docs
 
 
-for chunk in chunk_documents(documents):
-    print(chunk,end="\n")
+chunks = chunk_documents(documents)
+
+embeddings = embed_chunks(chunks=chunks)
+print(len(embeddings))
+
+
+    
