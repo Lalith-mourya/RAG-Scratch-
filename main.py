@@ -1,6 +1,8 @@
 from pathlib import Path
 import logging
 
+from chunker import chunk_text
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s"
@@ -40,8 +42,34 @@ def load_docs():
     for files in documents:
         print(files,end="\n ------------- \n")
 
-
+    return documents
 
 documents = load_docs()
 
 
+def chunk_documents(documents, chunk_size=500, overlap=100):
+    chunk_docs = []
+
+    logger.info("Started chunking")
+
+    for document in documents:
+        text = document["text"]
+        source = document["metadata"]["source"]
+
+        text_chunks = chunk_text(text, chunk_size, overlap)
+
+        for text_chunk in text_chunks:
+            chunk_docs.append({
+                "text": text_chunk,
+                "metadata": {
+                    "source": source
+                }
+            })
+
+    logger.info("Successfully created %d chunks", len(chunk_docs))
+
+    return chunk_docs
+
+
+for chunk in chunk_documents(documents):
+    print(chunk,end="\n")
