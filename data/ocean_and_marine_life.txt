@@ -1,0 +1,21 @@
+This is file 3OCEANS, MARINE ECOSYSTEMS, AND UNDERWATER LIFE
+
+The world's oceans cover approximately 71 percent of Earth's surface. They influence global climate by absorbing and redistributing heat, store large quantities of carbon, and support an enormous diversity of organisms.
+
+Marine ecosystems include coral reefs, mangrove forests, seagrass meadows, open-ocean habitats, and deep-sea environments. Each ecosystem provides different resources and living conditions for marine organisms.
+
+Coral reefs are built primarily by colonies of tiny animals called coral polyps. Many reef-building corals have a symbiotic relationship with microscopic algae that live within their tissues. These algae provide energy through photosynthesis, while corals provide shelter and access to nutrients.
+
+Coral bleaching occurs when corals lose their symbiotic algae or the pigments associated with them, often because of environmental stress such as unusually high water temperatures. Bleached corals are not necessarily dead, but prolonged or severe bleaching can cause significant mortality.
+
+Mangrove forests grow along tropical and subtropical coastlines. Their specialized roots help stabilize sediments, reduce coastal erosion, and provide nursery habitats for young fish, crabs, and other animals. Mangroves also store substantial amounts of carbon in their biomass and underlying soils.
+
+The deep sea is characterized by low temperatures, high pressure, and little or no sunlight. Since photosynthesis is generally impossible in permanently dark regions, many deep-sea food webs depend on organic matter sinking from upper waters. Some ecosystems near hydrothermal vents instead rely on chemosynthetic microorganisms that obtain energy from chemical reactions.
+
+Bioluminescence is the production of light by living organisms through chemical reactions. It occurs in various marine animals, including certain jellyfish, squid, and deep-sea fish. Bioluminescence can help organisms attract prey, communicate, confuse predators, or camouflage themselves.
+
+Whales, dolphins, and porpoises are marine mammals rather than fish. They breathe air using lungs, maintain relatively stable internal body temperatures, and give birth to live young. Many toothed whales use echolocation, producing sounds and interpreting returning echoes to locate prey and navigate.
+
+Plastic pollution threatens marine environments when discarded materials enter rivers and oceans. Larger plastic objects can entangle animals, while smaller fragments known as microplastics can be ingested by marine organisms. Reducing unnecessary plastic consumption, improving waste management, and preventing litter from entering waterways can help address this problem.
+
+Ocean scientists study marine ecosystems using research vessels, underwater robots, satellite observations, acoustic instruments, and autonomous sensors. These tools help researchers monitor ocean temperatures, currents, biodiversity, pollution, and changes in marine habitats.
