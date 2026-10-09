@@ -42,6 +42,6 @@ def load_docs():
 
 
 
-load_docs()
+documents = load_docs()
 
 
