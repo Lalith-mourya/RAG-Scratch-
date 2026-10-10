@@ -2,7 +2,8 @@ from pathlib import Path
 import logging
 
 from chunker import chunk_text
-from embedding import embed_chunks
+from embedding import EMBEDDING
+from retriever import retriever
 
 logging.basicConfig(
     level=logging.INFO,
@@ -74,8 +75,16 @@ def chunk_documents(documents, chunk_size=500, overlap=100):
 
 chunks = chunk_documents(documents)
 
-embeddings = embed_chunks(chunks=chunks)
-print(len(embeddings))
+embedded_chunks = EMBEDDING(chunks=chunks)
 
+query = "How do coral reefs support marine life?"
+
+results = retriever(query, embedded_chunks, top_k=3)
+
+for i, result in enumerate(results, start=1):
+    print(f"\nResult {i}")
+    print("Source:", result["metadata"]["source"])
+    print("Score:", round(result["score"], 4))
+    print("Text:", result["text"])
 
     
