@@ -49,30 +49,29 @@ documents = load_docs()
 
 def chunk_documents(documents, chunk_size=500, overlap=100):
     chunk_docs = []
-
+    chunk_id = 1
     logger.info("Started chunking")
 
     for document in documents:
         text = document["text"]
         source = document["metadata"]["source"]
-
         text_chunks = chunk_text(text, chunk_size, overlap)
 
         for text_chunk in text_chunks:
             chunk_docs.append({
+                "id": chunk_id,
                 "text": text_chunk,
                 "metadata": {
                     "source": source
                 }
             })
+            chunk_id +=1
 
     logger.info("Successfully created %d chunks", len(chunk_docs))
 
     return chunk_docs
 
-
 chunks = chunk_documents(documents)
-
 embedded_chunks = EMBEDDING(chunks=chunks)
 
 query = "How is espresso prepared?"
