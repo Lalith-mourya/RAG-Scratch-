@@ -58,18 +58,13 @@ def mean_reciprocal_rank(all_retrieved_ids , all_relevant_ids , k=3):
     
     total_reciprocal_rank = 0.0
 
-    for retrived_ids,relevant_ids in zip(all_retrieved_ids,all_relevant_ids):
+    for retrieved_ids,relevant_ids in zip(all_retrieved_ids,all_relevant_ids):
         total_reciprocal_rank += reciprocal_rank(retrieved_ids,relevant_ids,3)
 
     return total_reciprocal_rank/len(all_retrieved_ids)
 
     
 
-retrieved_ids = [5, 2, 8]
-relevant_ids = [2, 8, 9, 10]
 
-print(hit_rate_at_k(retrieved_ids,relevant_ids,3))
-print(recall_k(retrieved_ids,relevant_ids,3))
-print(precision_k(retrieved_ids,relevant_ids,3))
 
 
