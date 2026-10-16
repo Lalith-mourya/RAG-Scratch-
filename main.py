@@ -4,6 +4,7 @@ import logging
 from chunker import chunk_text
 from embedding import EMBEDDING
 from retriever import retriever
+from generator import generate_answer
 
 logging.basicConfig(
     level=logging.INFO,
@@ -41,9 +42,6 @@ def load_docs():
             continue
     logger.info("Loaded %d documents",len(documents))
 
-    for files in documents:
-        print(files,end="\n ------------- \n")
-
     return documents
 
 documents = load_docs()
@@ -77,14 +75,11 @@ chunks = chunk_documents(documents)
 
 embedded_chunks = EMBEDDING(chunks=chunks)
 
-query = "How do coral reefs support marine life?"
-
+query = "How is espresso prepared?"
 results = retriever(query, embedded_chunks, top_k=3)
+response = generate_answer(query, results)
 
-for i, result in enumerate(results, start=1):
-    print(f"\nResult {i}")
-    print("Source:", result["metadata"]["source"])
-    print("Score:", round(result["score"], 4))
-    print("Text:", result["text"])
+print(response["answer"])
+print("Sources:", response["sources"])
 
     
