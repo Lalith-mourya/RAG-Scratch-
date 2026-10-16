@@ -29,5 +29,5 @@ def retriever(query,embedded_chunks,top_k = 3):
         })
 
     results.sort(key=lambda item:item["score"],reverse=True)
-
+    print(results[:top_k])
     return results[:top_k]
