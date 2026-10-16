@@ -12,10 +12,3 @@ def cosine_similarity(vector_a , vector_b):
     similarity = dot_product/(magnitude_a*magnitude_b)
     return similarity
 
-
-vector_a = np.array([1, 0])
-vector_b = np.array([0.8, 0.6])
-
-score = cosine_similarity(vector_a, vector_b)
-
-print(score)
