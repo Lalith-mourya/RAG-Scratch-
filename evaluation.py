@@ -1,7 +1,7 @@
 def hit_rate_at_k(retrieved_ids , relevant_ids , k=3):
 
     top_k_id = retrieved_ids[:k]
-    
+
     for i in top_k_id:
         if i in relevant_ids:
             return 1 
@@ -19,7 +19,19 @@ def recall_k(retrieved_ids,relevant_ids,k=3):
             count+=1
     return count/len(relevant_ids)
 
+def precision_k(retrieved_ids , relevent_ids , k=3):
+    if k<0:
+        return 0.0
+    
+    count = 0
 
+    top_k_ids = retrieved_ids[:k]
+
+    for i in top_k_ids:
+        if i in relevent_ids:
+            count+=1
+
+    return count / k
 
 
 
