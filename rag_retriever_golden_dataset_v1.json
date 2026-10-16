@@ -1,0 +1,250 @@
+{
+  "dataset_name": "rag_retriever_golden_dataset_v1",
+  "description": "Manually labeled evaluation questions for the current 21-chunk RAG corpus. Chunk IDs refer to the globally unique IDs printed by the user's current chunker. Relevant IDs include chunks that contain direct evidence or useful supporting evidence; overlapping chunks may both be labeled relevant.",
+  "corpus": [
+    "coffee_and_brewing.txt",
+    "ocean_and_marine_life.txt",
+    "space_exploration.txt"
+  ],
+  "retrieval_settings": {
+    "top_k": 3,
+    "chunk_count": 21,
+    "chunk_size": 500,
+    "overlap": 100
+  },
+  "answerable_queries": [
+    {
+      "id": "Q01",
+      "query": "What are the main flavor characteristics of Arabica coffee?",
+      "relevant_chunk_ids": [
+        1
+      ],
+      "expected_answer": "Arabica is generally known for complex aromas, acidity, and varied flavor profiles."
+    },
+    {
+      "id": "Q02",
+      "query": "How does Robusta differ from Arabica in caffeine, taste, and plant resistance?",
+      "relevant_chunk_ids": [
+        1,
+        2
+      ],
+      "expected_answer": "Robusta usually has more caffeine and a stronger, more bitter taste; its plants are commonly more resistant to certain pests and diseases."
+    },
+    {
+      "id": "Q03",
+      "query": "What happens during washed and natural coffee processing?",
+      "relevant_chunk_ids": [
+        2
+      ],
+      "expected_answer": "In washed processing, fruit is removed and the beans are fermented, washed, and dried. In natural processing, whole cherries are dried before the fruit is removed."
+    },
+    {
+      "id": "Q04",
+      "query": "How do light and dark coffee roasts differ?",
+      "relevant_chunk_ids": [
+        3
+      ],
+      "expected_answer": "Light roasts often preserve more original bean characteristics and brighter acidity; dark roasts tend to have stronger roasted, smoky, or bittersweet flavors."
+    },
+    {
+      "id": "Q05",
+      "query": "How do French press, pour-over, and espresso brewing methods work?",
+      "relevant_chunk_ids": [
+        3,
+        4
+      ],
+      "expected_answer": "French press immerses coarse grounds in hot water, pour-over gradually pours water over grounds in a filter, and espresso forces hot water through finely ground coffee under pressure."
+    },
+    {
+      "id": "Q06",
+      "query": "How is espresso prepared, and what is crema?",
+      "relevant_chunk_ids": [
+        4
+      ],
+      "expected_answer": "Espresso is made by forcing hot water through finely ground coffee under pressure; crema is the layer of foam on the concentrated beverage."
+    },
+    {
+      "id": "Q07",
+      "query": "Which factors affect coffee extraction?",
+      "relevant_chunk_ids": [
+        4,
+        5
+      ],
+      "expected_answer": "Grind size, water temperature, brewing time, water quality, and the coffee-to-water ratio affect extraction."
+    },
+    {
+      "id": "Q08",
+      "query": "What are the effects of under-extraction and excessive extraction in coffee?",
+      "relevant_chunk_ids": [
+        5
+      ],
+      "expected_answer": "Under-extraction can produce a weak or sour-tasting drink; excessive extraction can contribute to harsh or bitter flavors."
+    },
+    {
+      "id": "Q09",
+      "query": "What is coffee degassing, and why can it matter for espresso?",
+      "relevant_chunk_ids": [
+        5,
+        6
+      ],
+      "expected_answer": "Freshly roasted coffee releases carbon dioxide in a process called degassing. Allowing some time after roasting can improve brewing consistency, especially for espresso."
+    },
+    {
+      "id": "Q10",
+      "query": "Does decaffeinated coffee contain absolutely no caffeine?",
+      "relevant_chunk_ids": [
+        6
+      ],
+      "expected_answer": "No. Decaffeinated coffee has undergone processing to remove most caffeine, but small amounts typically remain."
+    },
+    {
+      "id": "Q11",
+      "query": "Which characteristics are used to evaluate coffee, and what influences them?",
+      "relevant_chunk_ids": [
+        6,
+        7
+      ],
+      "expected_answer": "Coffee can be evaluated by aroma, acidity, sweetness, body, and aftertaste. These are influenced by variety, growing conditions, processing, roast level, and brewing method."
+    },
+    {
+      "id": "Q12",
+      "query": "How much of Earth's surface is covered by oceans, and how do oceans affect climate?",
+      "relevant_chunk_ids": [
+        8
+      ],
+      "expected_answer": "Oceans cover approximately 71 percent of Earth's surface and influence climate by absorbing and redistributing heat; they also store large quantities of carbon."
+    },
+    {
+      "id": "Q13",
+      "query": "What are coral reefs made of, and how do coral polyps interact with microscopic algae?",
+      "relevant_chunk_ids": [
+        8,
+        9
+      ],
+      "expected_answer": "Coral reefs are built primarily by colonies of coral polyps. Microscopic algae living in many reef-building corals provide energy through photosynthesis, while corals provide shelter and access to nutrients."
+    },
+    {
+      "id": "Q14",
+      "query": "What causes coral bleaching, and does bleaching always mean the coral is dead?",
+      "relevant_chunk_ids": [
+        9,
+        10
+      ],
+      "expected_answer": "Bleaching occurs when corals lose their symbiotic algae or associated pigments, often due to environmental stress such as unusually high water temperatures. Bleached corals are not necessarily dead, but severe or prolonged bleaching can cause mortality."
+    },
+    {
+      "id": "Q15",
+      "query": "How do mangrove forests protect coastlines and support animals?",
+      "relevant_chunk_ids": [
+        10,
+        11
+      ],
+      "expected_answer": "Mangrove roots stabilize sediments, reduce coastal erosion, and provide nursery habitats for young fish, crabs, and other animals."
+    },
+    {
+      "id": "Q16",
+      "query": "Why do many deep-sea food webs depend on material from upper waters, and what is different near hydrothermal vents?",
+      "relevant_chunk_ids": [
+        11,
+        12
+      ],
+      "expected_answer": "In permanently dark deep-sea regions, photosynthesis is generally impossible, so many food webs depend on organic matter sinking from upper waters. Some hydrothermal-vent ecosystems rely on chemosynthetic microorganisms."
+    },
+    {
+      "id": "Q17",
+      "query": "What is bioluminescence, and what purposes can it serve for marine animals?",
+      "relevant_chunk_ids": [
+        12,
+        13
+      ],
+      "expected_answer": "Bioluminescence is light production through chemical reactions. It can help marine animals attract prey, communicate, confuse predators, or camouflage themselves."
+    },
+    {
+      "id": "Q18",
+      "query": "Why are whales and dolphins classified as mammals rather than fish?",
+      "relevant_chunk_ids": [
+        12,
+        13
+      ],
+      "expected_answer": "They breathe air using lungs, maintain relatively stable internal body temperatures, and give birth to live young."
+    },
+    {
+      "id": "Q19",
+      "query": "How does plastic pollution harm marine animals, and what actions can help address it?",
+      "relevant_chunk_ids": [
+        13,
+        14
+      ],
+      "expected_answer": "Larger plastic objects can entangle animals, and microplastics can be ingested. Reducing unnecessary plastic use, improving waste management, and preventing litter from entering waterways can help."
+    },
+    {
+      "id": "Q20",
+      "query": "What tools do ocean scientists use to monitor marine environments?",
+      "relevant_chunk_ids": [
+        14,
+        15
+      ],
+      "expected_answer": "They use research vessels, underwater robots, satellite observations, acoustic instruments, and autonomous sensors to monitor temperatures, currents, biodiversity, pollution, and habitat changes."
+    },
+    {
+      "id": "Q21",
+      "query": "What objects are included in the Solar System, and what is the Sun's role?",
+      "relevant_chunk_ids": [
+        16
+      ],
+      "expected_answer": "The Solar System includes the Sun and orbiting objects such as eight planets, dwarf planets, moons, asteroids, and comets. The Sun contains most of its mass and provides energy that supports life on Earth."
+    },
+    {
+      "id": "Q22",
+      "query": "What is the order of the eight planets from the Sun?",
+      "relevant_chunk_ids": [
+        16,
+        17
+      ],
+      "expected_answer": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+      "id": "Q23",
+      "query": "Why is Mars called the Red Planet, and what are its two moons called?",
+      "relevant_chunk_ids": [
+        17
+      ],
+      "expected_answer": "Iron minerals in Martian soil oxidize and give the surface a reddish appearance. Its two small moons are Phobos and Deimos."
+    },
+    {
+      "id": "Q24",
+      "query": "What is a light-year, and approximately how far is it?",
+      "relevant_chunk_ids": [
+        18,
+        19
+      ],
+      "expected_answer": "A light-year is a unit of distance, not time. It is the distance light travels through a vacuum in one year, approximately 9.46 trillion kilometers."
+    },
+    {
+      "id": "Q25",
+      "query": "How do space telescopes and the James Webb Space Telescope help astronomers?",
+      "relevant_chunk_ids": [
+        19,
+        20
+      ],
+      "expected_answer": "Space telescopes observe celestial objects without many distortions caused by Earth's atmosphere. The James Webb Space Telescope primarily observes infrared light and helps study early galaxies, star formation, and distant planets' atmospheres."
+    }
+  ],
+  "unanswerable_queries": [
+    {
+      "id": "U01",
+      "query": "Who won the 2026 FIFA World Cup?",
+      "expected_behavior": "The provided documents do not contain this information; the RAG system should not invent an answer."
+    },
+    {
+      "id": "U02",
+      "query": "What is the current price of Arabica coffee per kilogram?",
+      "expected_behavior": "The provided documents do not contain current market prices; the RAG system should say it cannot answer from the supplied context."
+    },
+    {
+      "id": "U03",
+      "query": "What will the weather be in Amaravati tomorrow?",
+      "expected_behavior": "The provided documents do not contain weather forecasts; the RAG system should say it cannot answer from the supplied context."
+    }
+  ]
+}
