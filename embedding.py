@@ -17,6 +17,7 @@ def EMBEDDING(chunks):
 
     for chunk, embedding in zip(chunks, embeddings):
         embedded_chunk = {
+            "id": chunk["id"],
             "text": chunk["text"],
             "metadata": chunk["metadata"],
             "embedding": embedding
