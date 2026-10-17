@@ -5,6 +5,7 @@ from chunker import chunk_text
 from embedding import EMBEDDING
 from retriever import retriever
 from generator import generate_answer
+from evaluation import evaluate_retriever
 
 logging.basicConfig(
     level=logging.INFO,
@@ -74,12 +75,21 @@ def chunk_documents(documents, chunk_size=500, overlap=100):
 chunks = chunk_documents(documents)
 embedded_chunks = EMBEDDING(chunks=chunks)
 
-query = "How is espresso prepared?"
-results = retriever(query, embedded_chunks, top_k=3)
-response = generate_answer(query, results)
+#                       EVALUATION  OF RETRIEVER
+logger.info("Retriever Evaluation getting started with the golden dataset")
+evaluate_retriever(
+    embedded_chunks=embedded_chunks,
+    retrieve_fn=retriever,
+    dataset_path=BASE_DIR / "rag_retriever_golden_dataset_v1.json",
+    k=3
+)
 
-print(response["answer"])
-print("Sources:", response["sources"])
+# query = "How is espresso prepared?"
+# results = retriever(query, embedded_chunks, top_k=3)
+# response = generate_answer(query, results)
+
+# print(response["answer"])
+# print("Sources:", response["sources"])
 
 
     
