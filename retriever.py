@@ -25,9 +25,9 @@ def retriever(query,embedded_chunks,top_k = 3):
         results.append({
             "text":chunk["text"],
             "metadata":chunk["metadata"],
-            "score":score
+            "score":score,
+            "id":chunk["id"]
         })
 
     results.sort(key=lambda item:item["score"],reverse=True)
-    print(results[:top_k])
     return results[:top_k]
