@@ -77,11 +77,12 @@ embedded_chunks = EMBEDDING(chunks=chunks)
 
 #                       EVALUATION  OF RETRIEVER
 logger.info("Retriever Evaluation getting started with the golden dataset")
+
 evaluate_retriever(
     embedded_chunks=embedded_chunks,
     retrieve_fn=retriever,
     dataset_path=BASE_DIR / "rag_retriever_golden_dataset_v1.json",
-    k=3
+    k=4
 )
 
 # query = "How is espresso prepared?"
