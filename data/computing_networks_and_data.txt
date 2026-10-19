@@ -1,0 +1,23 @@
+COMPUTER NETWORKS, DATA, AND DIGITAL SYSTEMS
+
+A computer network connects devices so that they can exchange data and share resources. Networks can be small, such as a home network, or large, such as the global Internet. Devices communicate through wired links, wireless signals, or combinations of both. Network design considers speed, reliability, security, cost, distance, and the number of devices.
+
+An Internet Protocol address identifies an interface on an IP network. IPv4 addresses use 32 bits and are commonly written as four decimal numbers separated by dots. IPv6 uses 128 bits and was developed to provide a much larger address space. A device may use different addresses on local and public networks, and network address translation can allow several local devices to share a public IPv4 address.
+
+The Domain Name System, or DNS, helps translate human-readable domain names into information used to locate services on networks, commonly including IP addresses. A computer may check a local cache before asking a DNS resolver. Resolvers can query other DNS servers to find an answer. Caching reduces repeated work, but cached information can remain available until its time-to-live expires.
+
+When a browser requests a web page, it commonly establishes a connection to a server and sends an HTTP request. The server responds with a status code, headers, and possibly a body containing HTML, data, or another resource. HTTPS protects HTTP communication using Transport Layer Security, which helps provide encryption, integrity, and authentication when certificates are validated correctly.
+
+TCP provides a reliable, ordered byte stream between endpoints. It uses acknowledgments and retransmission to handle packet loss and controls how much data is sent. UDP sends datagrams without providing the same built-in reliability and ordering guarantees. Applications may choose UDP when low overhead or timing matters, or add their own mechanisms when needed. Neither protocol is universally better; the choice depends on application requirements.
+
+Latency is the time required for data to travel between endpoints or complete an operation. Throughput describes the amount of data transferred per unit time. High bandwidth does not guarantee low latency, and a connection with low latency may still have limited throughput. Congestion, routing, wireless interference, server processing, and physical distance can affect network performance.
+
+A database stores organized information that can be searched, updated, and managed. Relational databases represent data in tables and use keys and constraints to maintain relationships and data integrity. SQL is commonly used to query and modify relational data. Document databases store records in document-like structures and may suit applications whose data shapes vary. Database choice depends on query patterns, consistency needs, scale, and operational constraints.
+
+An algorithm is a sequence of defined steps for solving a problem. Time complexity describes how the number of operations grows as input size increases, while space complexity describes how memory requirements grow. Big-O notation expresses an upper-bound growth rate while abstracting away many machine-specific details. An algorithm with better asymptotic complexity is not always faster for small inputs because constant factors and implementation details matter.
+
+Caching stores copies of data or results so future requests can be served faster. A cache hit occurs when the requested item is available, while a cache miss requires retrieving or computing it again. Caches improve performance but introduce challenges involving expiration, invalidation, memory limits, and stale information. Different systems use time-based expiration, least-recently-used eviction, or other policies.
+
+Cybersecurity aims to protect systems and information from unauthorized access, disruption, alteration, and disclosure. Authentication checks who or what is requesting access, while authorization determines which actions are permitted. Encryption protects information by making it unreadable without the required key. Multi-factor authentication combines different types of evidence, such as something a person knows and something they possess.
+
+Reliable software systems use testing, monitoring, backups, access controls, and recovery plans. Logs record events that help diagnose problems, while metrics summarize system behavior over time. Backups should be tested through restoration exercises rather than assumed to work merely because backup jobs report success. Security and reliability are ongoing practices rather than one-time features.

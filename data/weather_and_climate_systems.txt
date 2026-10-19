@@ -1,0 +1,21 @@
+WEATHER, CLIMATE, AND THE WATER CYCLE
+
+Weather describes atmospheric conditions over short periods, such as hours or days. Climate describes patterns and statistics of weather over longer periods, often assessed across several decades. A cold day does not disprove a warming climate, just as a hot afternoon by itself does not establish a long-term climate trend.
+
+The atmosphere is a mixture of gases surrounding Earth. Nitrogen and oxygen make up most of dry air, while smaller quantities of gases such as carbon dioxide and water vapor influence important atmospheric processes. The atmosphere also contains suspended particles, including dust, sea salt, smoke, and pollen. These particles can affect visibility, cloud formation, and the amount of sunlight reaching the surface.
+
+Solar energy drives weather and climate. Earth's surface absorbs sunlight and emits energy as infrared radiation. Different surfaces heat and cool at different rates. Land generally changes temperature faster than the ocean, which contributes to coastal breezes and larger-scale circulation patterns. The tilt of Earth's axis causes seasonal changes in the angle and duration of sunlight.
+
+Air pressure is the force exerted by the weight of air above a location. Differences in pressure help drive wind. Air tends to move from higher pressure toward lower pressure, although Earth's rotation and friction influence its direction and speed. Large-scale wind patterns redistribute heat and moisture around the planet.
+
+The water cycle describes the movement of water between the surface, atmosphere, and underground stores. Evaporation changes liquid water into vapor, while transpiration releases water vapor from plants. Rising moist air can cool, causing condensation and cloud formation. Precipitation returns water to the surface as rain, snow, sleet, or hail. Some water runs into streams and rivers, some infiltrates soil, and some replenishes groundwater.
+
+Clouds form when water vapor condenses onto tiny particles in the air. Cloud appearance depends on droplet or ice-crystal size, altitude, temperature, and air movement. Not every cloud produces precipitation. Rain or snow reaches the ground when particles grow large enough and atmospheric conditions allow them to survive the fall.
+
+A thunderstorm can develop when warm, moist air rises rapidly in an unstable atmosphere. Rising air cools and water vapor condenses, releasing latent heat that can strengthen the updraft. Strong thunderstorms may produce lightning, heavy rain, hail, damaging winds, or tornadoes. Forecasting these hazards involves weather stations, radar, satellites, atmospheric models, and observations from balloons and aircraft.
+
+The greenhouse effect is a natural process in which gases in the atmosphere absorb and emit infrared radiation, warming Earth's surface and lower atmosphere compared with a planet without these gases. Human activities have increased concentrations of greenhouse gases, especially carbon dioxide and methane. This additional influence changes Earth's energy balance and contributes to long-term warming.
+
+Climate change can affect sea level, heat extremes, rainfall patterns, ecosystems, and the frequency or intensity of some weather hazards. Impacts vary by region and depend on exposure, vulnerability, and adaptation. Risk reduction can include heat plans, flood protection, resilient infrastructure, improved forecasts, and reductions in greenhouse gas emissions.
+
+Weather forecasts combine observations with numerical models that approximate atmospheric physics. Forecast uncertainty generally increases farther into the future because the atmosphere is complex and small differences in initial conditions can grow over time. Probabilistic forecasts communicate uncertainty by expressing the likelihood of outcomes rather than presenting every prediction as certain.
