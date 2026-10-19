@@ -224,8 +224,7 @@
       "topic": "coffee_and_brewing",
       "query": "How do washed and natural coffee processing differ?",
       "relevant_chunk_ids": [
-        25,
-        26
+        25
       ],
       "expected_answer": "In washed processing the fruit is removed before fermentation, washing, and drying; in natural processing whole cherries are dried before fruit removal."
     },
@@ -724,7 +723,6 @@
       "topic": "ocean_and_marine_life",
       "query": "Why are whales and dolphins classified as mammals rather than fish?",
       "relevant_chunk_ids": [
-        77,
         78
       ],
       "expected_answer": "They breathe air with lungs, maintain relatively stable body temperatures, and give birth to live young."
@@ -734,7 +732,6 @@
       "topic": "ocean_and_marine_life",
       "query": "What are microplastics, and how can they affect marine organisms?",
       "relevant_chunk_ids": [
-        78,
         79
       ],
       "expected_answer": "They are small plastic fragments that can be ingested by marine organisms."
@@ -810,7 +807,6 @@
       "topic": "space_exploration",
       "query": "What is an event horizon in the context of a black hole?",
       "relevant_chunk_ids": [
-        83,
         84
       ],
       "expected_answer": "It is the boundary within which gravity is so strong that nothing, including light, can escape."
@@ -934,8 +930,7 @@
       "topic": "weather_and_climate_systems",
       "query": "Name two possible effects of climate change described in the document.",
       "relevant_chunk_ids": [
-        94,
-        95
+        94
       ],
       "expected_answer": "Effects can include sea-level change, heat extremes, rainfall changes, ecosystem impacts, and changes in some weather hazards."
     },
