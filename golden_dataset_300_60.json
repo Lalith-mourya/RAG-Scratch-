@@ -1,0 +1,1244 @@
+{
+  "dataset_name": "rag_retriever_golden_dataset_v2",
+  "version": "2.0",
+  "corpus": {
+    "document_count": 10,
+    "chunk_count_at_creation": 160,
+    "chunk_size": 300,
+    "chunk_overlap": 60,
+    "chunk_id_mapping": {
+      "animal_behavior_and_adaptation.txt": "1-18",
+      "bridges_and_civil_engineering.txt": "19-37",
+      "coffee_and_brewing.txt": "38-49",
+      "computing_networks_and_data.txt": "50-69",
+      "forests_and_plant_ecology.txt": "70-84",
+      "human_history_and_archaeology.txt": "85-101",
+      "materials_and_everyday_chemistry.txt": "102-120",
+      "ocean_and_marine_life.txt": "121-133",
+      "space_exploration.txt": "134-143",
+      "weather_and_climate_systems.txt": "144-160"
+    },
+    "relevance_remapping_note": "Relevant chunk IDs were remapped from the original 500-character/100-overlap chunks to the 300-character/60-overlap chunks by matching source-document character ranges. For each originally relevant chunk, new chunks overlapping at least 80 characters were marked relevant; if none met that threshold, the new chunk with the largest overlap was used."
+  },
+  "answerable_queries": [
+    {
+      "id": "A001",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "What kinds of goals can animal behavior help animals achieve?",
+      "relevant_chunk_ids": [
+        1,
+        2
+      ],
+      "expected_answer": "Animal behavior can help animals obtain food, avoid predators, find mates, care for young, and interact with others."
+    },
+    {
+      "id": "A002",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "What is an adaptation in evolutionary biology?",
+      "relevant_chunk_ids": [
+        2,
+        3,
+        4
+      ],
+      "expected_answer": "An adaptation is an inherited characteristic that improves survival or reproductive success in a particular environment."
+    },
+    {
+      "id": "A003",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "How does natural selection change the frequency of traits?",
+      "relevant_chunk_ids": [
+        4,
+        5,
+        6
+      ],
+      "expected_answer": "Heritable traits associated with greater reproductive success can become more common over generations."
+    },
+    {
+      "id": "A004",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "How can camouflage help an animal?",
+      "relevant_chunk_ids": [
+        6,
+        7
+      ],
+      "expected_answer": "Camouflage can reduce detection by predators or prey through coloration, shape, or behavior."
+    },
+    {
+      "id": "A005",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "Why do animals migrate?",
+      "relevant_chunk_ids": [
+        7,
+        8,
+        9
+      ],
+      "expected_answer": "Animals may migrate to find food, breed, avoid harsh weather, or use seasonally changing habitats."
+    },
+    {
+      "id": "A006",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "Name two ways animals communicate.",
+      "relevant_chunk_ids": [
+        9,
+        10,
+        11
+      ],
+      "expected_answer": "Animals communicate through methods such as sound, visual displays, chemical signals, touch, or electrical signals."
+    },
+    {
+      "id": "A007",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "Give one benefit and one cost of group living for animals.",
+      "relevant_chunk_ids": [
+        11,
+        12
+      ],
+      "expected_answer": "Group living can improve predator detection or food finding, but it can also increase competition or disease transmission."
+    },
+    {
+      "id": "A008",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "How can animals help plants reproduce?",
+      "relevant_chunk_ids": [
+        12,
+        13,
+        14
+      ],
+      "expected_answer": "Animals can transfer pollen between flowers and disperse seeds away from parent plants."
+    },
+    {
+      "id": "A009",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "How can prey animals reduce their risk from predators?",
+      "relevant_chunk_ids": [
+        14,
+        15,
+        16
+      ],
+      "expected_answer": "Prey may change feeding times or habitat use to reduce risk."
+    },
+    {
+      "id": "A010",
+      "topic": "animal_behavior_and_adaptation",
+      "query": "Name two human activities that can alter animal behavior.",
+      "relevant_chunk_ids": [
+        16,
+        17
+      ],
+      "expected_answer": "Habitat loss, artificial light, noise, roads, fishing, and climate change can alter animal behavior."
+    },
+    {
+      "id": "A011",
+      "topic": "bridges_and_civil_engineering",
+      "query": "What must civil engineers consider when designing infrastructure?",
+      "relevant_chunk_ids": [
+        19,
+        20
+      ],
+      "expected_answer": "They consider loads, safety, durability, usability, cost, environmental impact, and how forces move through the structure."
+    },
+    {
+      "id": "A012",
+      "topic": "bridges_and_civil_engineering",
+      "query": "What is the difference between dead loads and live loads?",
+      "relevant_chunk_ids": [
+        20,
+        21,
+        22
+      ],
+      "expected_answer": "Dead loads are permanent structural weight and fixed equipment; live loads vary, such as people, vehicles, and movable objects."
+    },
+    {
+      "id": "A013",
+      "topic": "bridges_and_civil_engineering",
+      "query": "What is the difference between tension and compression?",
+      "relevant_chunk_ids": [
+        22,
+        23,
+        24
+      ],
+      "expected_answer": "Tension pulls and tends to stretch a material, while compression pushes and tends to shorten it."
+    },
+    {
+      "id": "A014",
+      "topic": "bridges_and_civil_engineering",
+      "query": "How does a truss carry loads?",
+      "relevant_chunk_ids": [
+        24,
+        25
+      ],
+      "expected_answer": "A truss uses interconnected triangular members that carry loads through tension and compression."
+    },
+    {
+      "id": "A015",
+      "topic": "bridges_and_civil_engineering",
+      "query": "How does an arch bridge transfer much of its load?",
+      "relevant_chunk_ids": [
+        25,
+        26,
+        27
+      ],
+      "expected_answer": "An arch transfers much of its load through compression along the arch into its abutments."
+    },
+    {
+      "id": "A016",
+      "topic": "bridges_and_civil_engineering",
+      "query": "Why is steel reinforcement used in concrete?",
+      "relevant_chunk_ids": [
+        27,
+        28,
+        29
+      ],
+      "expected_answer": "Concrete is strong in compression but weaker in tension; reinforcement helps the combined member resist both."
+    },
+    {
+      "id": "A017",
+      "topic": "bridges_and_civil_engineering",
+      "query": "What are two factors that can damage timber used in structures?",
+      "relevant_chunk_ids": [
+        29,
+        30
+      ],
+      "expected_answer": "Moisture, fire, biological attack, and connection details require attention."
+    },
+    {
+      "id": "A018",
+      "topic": "bridges_and_civil_engineering",
+      "query": "How do shallow and deep foundations differ?",
+      "relevant_chunk_ids": [
+        30,
+        31,
+        32
+      ],
+      "expected_answer": "Shallow foundations spread loads near the surface; deep foundations transfer loads to deeper soil or rock or use friction along their length."
+    },
+    {
+      "id": "A019",
+      "topic": "bridges_and_civil_engineering",
+      "query": "What is fatigue in a bridge or other structure?",
+      "relevant_chunk_ids": [
+        32,
+        33,
+        34
+      ],
+      "expected_answer": "Fatigue is damage accumulation under repeated loading that can eventually cause cracking."
+    },
+    {
+      "id": "A020",
+      "topic": "bridges_and_civil_engineering",
+      "query": "What instruments can be used for structural health monitoring?",
+      "relevant_chunk_ids": [
+        34,
+        35
+      ],
+      "expected_answer": "Examples include strain gauges, accelerometers, displacement sensors, and cameras."
+    },
+    {
+      "id": "A021",
+      "topic": "coffee_and_brewing",
+      "query": "What are coffee beans botanically?",
+      "relevant_chunk_ids": [
+        38,
+        39
+      ],
+      "expected_answer": "Coffee beans are seeds from fruits commonly called coffee cherries."
+    },
+    {
+      "id": "A022",
+      "topic": "coffee_and_brewing",
+      "query": "How do Arabica and Robusta typically differ in taste and caffeine?",
+      "relevant_chunk_ids": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "expected_answer": "Arabica is associated with complex aromas and acidity; Robusta usually has more caffeine and a stronger, more bitter taste."
+    },
+    {
+      "id": "A023",
+      "topic": "coffee_and_brewing",
+      "query": "How do washed and natural coffee processing differ?",
+      "relevant_chunk_ids": [
+        39,
+        40,
+        41
+      ],
+      "expected_answer": "In washed processing the fruit is removed before fermentation, washing, and drying; in natural processing whole cherries are dried before fruit removal."
+    },
+    {
+      "id": "A024",
+      "topic": "coffee_and_brewing",
+      "query": "How can light and dark roasts differ in flavor?",
+      "relevant_chunk_ids": [
+        41,
+        42,
+        43
+      ],
+      "expected_answer": "Light roasts may preserve original characteristics and brighter acidity; dark roasts tend toward roasted, smoky, or bittersweet flavors."
+    },
+    {
+      "id": "A025",
+      "topic": "coffee_and_brewing",
+      "query": "How does a French press brew coffee?",
+      "relevant_chunk_ids": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "expected_answer": "It immerses coarse grounds in hot water and then separates them with a metal filter."
+    },
+    {
+      "id": "A026",
+      "topic": "coffee_and_brewing",
+      "query": "What makes espresso different from the other brewing methods described?",
+      "relevant_chunk_ids": [
+        43,
+        44
+      ],
+      "expected_answer": "Espresso forces hot water through finely ground coffee under pressure, producing a concentrated drink with crema."
+    },
+    {
+      "id": "A027",
+      "topic": "coffee_and_brewing",
+      "query": "Name three factors that affect coffee extraction.",
+      "relevant_chunk_ids": [
+        43,
+        44,
+        45,
+        46
+      ],
+      "expected_answer": "Grind size, water temperature, brewing time, water quality, and coffee-to-water ratio affect extraction."
+    },
+    {
+      "id": "A028",
+      "topic": "coffee_and_brewing",
+      "query": "What can under-extracted coffee taste like according to the document?",
+      "relevant_chunk_ids": [
+        44,
+        45,
+        46
+      ],
+      "expected_answer": "It may taste weak or sour."
+    },
+    {
+      "id": "A029",
+      "topic": "coffee_and_brewing",
+      "query": "What is coffee degassing, and why can resting help espresso?",
+      "relevant_chunk_ids": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "expected_answer": "Degassing is the release of carbon dioxide from freshly roasted coffee; allowing time can improve brewing consistency, especially for espresso."
+    },
+    {
+      "id": "A030",
+      "topic": "coffee_and_brewing",
+      "query": "Which characteristics can be used to evaluate coffee?",
+      "relevant_chunk_ids": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "expected_answer": "Aroma, acidity, sweetness, body, and aftertaste can be used to evaluate coffee."
+    },
+    {
+      "id": "A031",
+      "topic": "computing_networks_and_data",
+      "query": "What is a computer network used for?",
+      "relevant_chunk_ids": [
+        50,
+        51
+      ],
+      "expected_answer": "It connects devices so they can exchange data and share resources."
+    },
+    {
+      "id": "A032",
+      "topic": "computing_networks_and_data",
+      "query": "How many bits are used by IPv4 and IPv6 addresses?",
+      "relevant_chunk_ids": [
+        51,
+        52,
+        53
+      ],
+      "expected_answer": "IPv4 uses 32 bits, while IPv6 uses 128 bits."
+    },
+    {
+      "id": "A033",
+      "topic": "computing_networks_and_data",
+      "query": "What does DNS do?",
+      "relevant_chunk_ids": [
+        53,
+        54,
+        55
+      ],
+      "expected_answer": "DNS helps translate human-readable domain names into information used to locate network services, commonly IP addresses."
+    },
+    {
+      "id": "A034",
+      "topic": "computing_networks_and_data",
+      "query": "What does HTTPS help protect when a browser communicates with a server?",
+      "relevant_chunk_ids": [
+        55,
+        56
+      ],
+      "expected_answer": "HTTPS helps provide encryption, integrity, and authentication when certificates are validated correctly."
+    },
+    {
+      "id": "A035",
+      "topic": "computing_networks_and_data",
+      "query": "How do TCP and UDP differ in reliability guarantees?",
+      "relevant_chunk_ids": [
+        56,
+        57,
+        58
+      ],
+      "expected_answer": "TCP provides a reliable, ordered byte stream; UDP does not provide the same built-in reliability and ordering guarantees."
+    },
+    {
+      "id": "A036",
+      "topic": "computing_networks_and_data",
+      "query": "What is the difference between latency and throughput?",
+      "relevant_chunk_ids": [
+        58,
+        59,
+        60
+      ],
+      "expected_answer": "Latency is the time needed for data to travel or an operation to complete; throughput is the amount of data transferred per unit time."
+    },
+    {
+      "id": "A037",
+      "topic": "computing_networks_and_data",
+      "query": "How do relational databases commonly organize data?",
+      "relevant_chunk_ids": [
+        60,
+        61
+      ],
+      "expected_answer": "They represent data in tables and use keys and constraints to maintain relationships and data integrity."
+    },
+    {
+      "id": "A038",
+      "topic": "computing_networks_and_data",
+      "query": "What do time complexity and space complexity describe?",
+      "relevant_chunk_ids": [
+        61,
+        62,
+        63
+      ],
+      "expected_answer": "Time complexity describes how operations grow with input size; space complexity describes how memory requirements grow."
+    },
+    {
+      "id": "A039",
+      "topic": "computing_networks_and_data",
+      "query": "What is a cache hit?",
+      "relevant_chunk_ids": [
+        63,
+        64,
+        65
+      ],
+      "expected_answer": "A cache hit occurs when the requested item is already available in the cache."
+    },
+    {
+      "id": "A040",
+      "topic": "computing_networks_and_data",
+      "query": "How do authentication and authorization differ?",
+      "relevant_chunk_ids": [
+        65,
+        66
+      ],
+      "expected_answer": "Authentication checks who or what is requesting access; authorization determines which actions are permitted."
+    },
+    {
+      "id": "A041",
+      "topic": "forests_and_plant_ecology",
+      "query": "What distinguishes tropical, temperate, and boreal forests in the document?",
+      "relevant_chunk_ids": [
+        70,
+        71
+      ],
+      "expected_answer": "They occur in different climate conditions: tropical forests are warm and wet, temperate forests have seasonal changes, and boreal forests occur in cold northern regions."
+    },
+    {
+      "id": "A042",
+      "topic": "forests_and_plant_ecology",
+      "query": "What happens during photosynthesis?",
+      "relevant_chunk_ids": [
+        71,
+        72,
+        73
+      ],
+      "expected_answer": "Plants use light energy to convert carbon dioxide and water into sugars, releasing oxygen as a by-product."
+    },
+    {
+      "id": "A043",
+      "topic": "forests_and_plant_ecology",
+      "query": "What do xylem and phloem transport?",
+      "relevant_chunk_ids": [
+        73,
+        74,
+        75
+      ],
+      "expected_answer": "Xylem mainly transports water and minerals from roots; phloem distributes sugars and other organic compounds."
+    },
+    {
+      "id": "A044",
+      "topic": "forests_and_plant_ecology",
+      "query": "What are stomata, and what do guard cells do?",
+      "relevant_chunk_ids": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "expected_answer": "Stomata are tiny pores for gas exchange; guard cells regulate their opening."
+    },
+    {
+      "id": "A045",
+      "topic": "forests_and_plant_ecology",
+      "query": "How do sandy soils differ from clay-rich soils in water and nutrient retention?",
+      "relevant_chunk_ids": [
+        75,
+        76
+      ],
+      "expected_answer": "Sandy soils drain quickly and often retain fewer nutrients; clay-rich soils can hold water and nutrients but may drain slowly."
+    },
+    {
+      "id": "A046",
+      "topic": "forests_and_plant_ecology",
+      "query": "What do mycorrhizal fungi provide to plants, and what do plants provide in return?",
+      "relevant_chunk_ids": [
+        76,
+        77,
+        78
+      ],
+      "expected_answer": "Fungal threads can help plants access water and minerals, especially phosphorus; plants supply fungi with carbon compounds."
+    },
+    {
+      "id": "A047",
+      "topic": "forests_and_plant_ecology",
+      "query": "Where is carbon stored in forest ecosystems?",
+      "relevant_chunk_ids": [
+        78,
+        79,
+        80
+      ],
+      "expected_answer": "Carbon is stored in trunks, branches, roots, leaves, and soil."
+    },
+    {
+      "id": "A048",
+      "topic": "forests_and_plant_ecology",
+      "query": "What are three ecosystem roles performed by forest species?",
+      "relevant_chunk_ids": [
+        80,
+        81
+      ],
+      "expected_answer": "Species can perform pollination, seed dispersal, decomposition, and herbivore control."
+    },
+    {
+      "id": "A049",
+      "topic": "forests_and_plant_ecology",
+      "query": "What may grow first during succession after a disturbance that leaves soil intact?",
+      "relevant_chunk_ids": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "expected_answer": "Grasses and herbs may grow first, followed by shrubs and trees."
+    },
+    {
+      "id": "A050",
+      "topic": "forests_and_plant_ecology",
+      "query": "Why is planting trees not always the best conservation strategy?",
+      "relevant_chunk_ids": [
+        83,
+        84
+      ],
+      "expected_answer": "It depends on the original ecosystem; planting trees in natural grasslands can damage habitats that support specialized biodiversity."
+    },
+    {
+      "id": "A051",
+      "topic": "human_history_and_archaeology",
+      "query": "What kinds of evidence can historians use?",
+      "relevant_chunk_ids": [
+        85,
+        86
+      ],
+      "expected_answer": "Historians can use written records, oral traditions, artifacts, buildings, images, and other evidence."
+    },
+    {
+      "id": "A052",
+      "topic": "human_history_and_archaeology",
+      "query": "What can pottery reveal to archaeologists?",
+      "relevant_chunk_ids": [
+        86,
+        87,
+        88
+      ],
+      "expected_answer": "Pottery can provide evidence about food preparation, storage, trade, and artistic styles."
+    },
+    {
+      "id": "A053",
+      "topic": "human_history_and_archaeology",
+      "query": "What does stratigraphy generally suggest about undisturbed layers?",
+      "relevant_chunk_ids": [
+        88,
+        89,
+        90
+      ],
+      "expected_answer": "Lower layers are generally older than layers above them."
+    },
+    {
+      "id": "A054",
+      "topic": "human_history_and_archaeology",
+      "query": "What materials can be suitable for radiocarbon dating?",
+      "relevant_chunk_ids": [
+        90,
+        91
+      ],
+      "expected_answer": "Suitable once-living materials include wood, charcoal, seeds, and bone containing appropriate carbon."
+    },
+    {
+      "id": "A055",
+      "topic": "human_history_and_archaeology",
+      "query": "What does dendrochronology use to establish dates?",
+      "relevant_chunk_ids": [
+        91,
+        92,
+        93
+      ],
+      "expected_answer": "It uses patterns of tree rings and comparisons with reference sequences."
+    },
+    {
+      "id": "A056",
+      "topic": "human_history_and_archaeology",
+      "query": "How can materials found far from their geological source help archaeologists?",
+      "relevant_chunk_ids": [
+        93,
+        94,
+        95
+      ],
+      "expected_answer": "They can provide evidence of trade or other exchange between communities."
+    },
+    {
+      "id": "A057",
+      "topic": "human_history_and_archaeology",
+      "query": "Was agriculture developed at one time by all communities?",
+      "relevant_chunk_ids": [
+        95,
+        96
+      ],
+      "expected_answer": "No. Agriculture developed in multiple regions and at different times."
+    },
+    {
+      "id": "A058",
+      "topic": "human_history_and_archaeology",
+      "query": "What features can reveal how an ancient city used its space?",
+      "relevant_chunk_ids": [
+        96,
+        97,
+        98
+      ],
+      "expected_answer": "Streets, walls, drainage channels, temples, workshops, and houses can provide clues."
+    },
+    {
+      "id": "A059",
+      "topic": "human_history_and_archaeology",
+      "query": "What is one strength and one limitation of oral history?",
+      "relevant_chunk_ids": [
+        98,
+        99,
+        100
+      ],
+      "expected_answer": "It can preserve perspectives missing from official documents, but memory can change and stories may serve cultural or social purposes."
+    },
+    {
+      "id": "A060",
+      "topic": "human_history_and_archaeology",
+      "query": "Why is archaeological context important?",
+      "relevant_chunk_ids": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        100,
+        101
+      ],
+      "expected_answer": "The location and association of finds provide information, and removing objects without recording context destroys evidence."
+    },
+    {
+      "id": "A061",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "How do metals, ceramics, polymers, and composites generally differ?",
+      "relevant_chunk_ids": [
+        102,
+        103
+      ],
+      "expected_answer": "Metals often conduct heat and electricity; ceramics are often hard and heat-resistant but brittle; polymers contain long molecular chains; composites combine materials."
+    },
+    {
+      "id": "A062",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "What determines an element's atomic number?",
+      "relevant_chunk_ids": [
+        103,
+        104,
+        105
+      ],
+      "expected_answer": "The number of protons in its nucleus determines its atomic number."
+    },
+    {
+      "id": "A063",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "How do ionic and covalent bonds differ?",
+      "relevant_chunk_ids": [
+        103,
+        104,
+        105
+      ],
+      "expected_answer": "Ionic bonding involves attraction between oppositely charged ions; covalent bonding involves atoms sharing electron pairs."
+    },
+    {
+      "id": "A064",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "What is conserved in an ordinary chemical reaction?",
+      "relevant_chunk_ids": [
+        105,
+        106,
+        107
+      ],
+      "expected_answer": "The total number of atoms of each element is conserved."
+    },
+    {
+      "id": "A065",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "What does a lower pH usually indicate?",
+      "relevant_chunk_ids": [
+        107,
+        108
+      ],
+      "expected_answer": "A lower pH usually indicates a more acidic solution."
+    },
+    {
+      "id": "A066",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "How can salt accelerate iron corrosion?",
+      "relevant_chunk_ids": [
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "expected_answer": "Salt can increase the conductivity of moisture on a surface, accelerating corrosion."
+    },
+    {
+      "id": "A067",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "What does thermal conductivity measure?",
+      "relevant_chunk_ids": [
+        110,
+        111,
+        112
+      ],
+      "expected_answer": "It describes how readily a material transfers heat through conduction."
+    },
+    {
+      "id": "A068",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "Why are copper and aluminum commonly used in wiring?",
+      "relevant_chunk_ids": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "expected_answer": "They conduct electricity well."
+    },
+    {
+      "id": "A069",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "What factors affect polymer properties?",
+      "relevant_chunk_ids": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "expected_answer": "Molecular structure, chain length, branching, crystallinity, additives, and processing can affect polymer properties."
+    },
+    {
+      "id": "A070",
+      "topic": "materials_and_everyday_chemistry",
+      "query": "What does a life-cycle assessment evaluate?",
+      "relevant_chunk_ids": [
+        117,
+        118
+      ],
+      "expected_answer": "It evaluates environmental impacts across stages such as raw-material extraction, manufacturing, transport, use, and disposal."
+    },
+    {
+      "id": "A071",
+      "topic": "ocean_and_marine_life",
+      "query": "Approximately what percentage of Earth's surface is covered by oceans?",
+      "relevant_chunk_ids": [
+        121,
+        122
+      ],
+      "expected_answer": "Approximately 71 percent."
+    },
+    {
+      "id": "A072",
+      "topic": "ocean_and_marine_life",
+      "query": "What are coral polyps, and how can algae benefit reef-building corals?",
+      "relevant_chunk_ids": [
+        122,
+        123,
+        124
+      ],
+      "expected_answer": "Coral polyps are tiny animals; symbiotic algae provide energy through photosynthesis while corals provide shelter and access to nutrients."
+    },
+    {
+      "id": "A073",
+      "topic": "ocean_and_marine_life",
+      "query": "What causes coral bleaching, and does bleaching always mean the coral is dead?",
+      "relevant_chunk_ids": [
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "expected_answer": "Bleaching occurs when corals lose symbiotic algae or pigments, often under environmental stress; bleached corals are not necessarily dead."
+    },
+    {
+      "id": "A074",
+      "topic": "ocean_and_marine_life",
+      "query": "How do mangrove roots benefit coastal areas and young marine animals?",
+      "relevant_chunk_ids": [
+        124,
+        125,
+        126,
+        127
+      ],
+      "expected_answer": "They stabilize sediments, reduce erosion, and provide nursery habitats for young animals."
+    },
+    {
+      "id": "A075",
+      "topic": "ocean_and_marine_life",
+      "query": "Why do many deep-sea food webs depend on organic matter sinking from upper waters?",
+      "relevant_chunk_ids": [
+        126,
+        127
+      ],
+      "expected_answer": "Permanent darkness generally prevents photosynthesis, so many deep-sea food webs rely on sinking organic matter."
+    },
+    {
+      "id": "A076",
+      "topic": "ocean_and_marine_life",
+      "query": "What is bioluminescence, and name one function it can serve.",
+      "relevant_chunk_ids": [
+        127,
+        128,
+        129
+      ],
+      "expected_answer": "It is light production through chemical reactions; it can attract prey, communicate, confuse predators, or camouflage organisms."
+    },
+    {
+      "id": "A077",
+      "topic": "ocean_and_marine_life",
+      "query": "Why are whales and dolphins classified as mammals rather than fish?",
+      "relevant_chunk_ids": [
+        129,
+        130,
+        131
+      ],
+      "expected_answer": "They breathe air with lungs, maintain relatively stable body temperatures, and give birth to live young."
+    },
+    {
+      "id": "A078",
+      "topic": "ocean_and_marine_life",
+      "query": "What are microplastics, and how can they affect marine organisms?",
+      "relevant_chunk_ids": [
+        131,
+        132
+      ],
+      "expected_answer": "They are small plastic fragments that can be ingested by marine organisms."
+    },
+    {
+      "id": "A079",
+      "topic": "ocean_and_marine_life",
+      "query": "Name two measures that can help reduce plastic pollution in oceans.",
+      "relevant_chunk_ids": [
+        131,
+        132
+      ],
+      "expected_answer": "Reducing unnecessary plastic consumption, improving waste management, and preventing litter entering waterways can help."
+    },
+    {
+      "id": "A080",
+      "topic": "ocean_and_marine_life",
+      "query": "Which tools can ocean scientists use to monitor marine habitats?",
+      "relevant_chunk_ids": [
+        131,
+        132,
+        133
+      ],
+      "expected_answer": "They use research vessels, underwater robots, satellites, acoustic instruments, and autonomous sensors."
+    },
+    {
+      "id": "A081",
+      "topic": "space_exploration",
+      "query": "What objects are included in the Solar System besides the Sun and planets?",
+      "relevant_chunk_ids": [
+        134,
+        135
+      ],
+      "expected_answer": "The Solar System also includes dwarf planets, moons, asteroids, and comets."
+    },
+    {
+      "id": "A082",
+      "topic": "space_exploration",
+      "query": "What is the order of the eight planets from the Sun?",
+      "relevant_chunk_ids": [
+        134,
+        135,
+        136,
+        137
+      ],
+      "expected_answer": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+    },
+    {
+      "id": "A083",
+      "topic": "space_exploration",
+      "query": "Why is Mars called the Red Planet, and what are its two moons called?",
+      "relevant_chunk_ids": [
+        135,
+        136,
+        137
+      ],
+      "expected_answer": "Iron minerals give Mars its reddish appearance; its moons are Phobos and Deimos."
+    },
+    {
+      "id": "A084",
+      "topic": "space_exploration",
+      "query": "What are Saturn's rings mainly made of?",
+      "relevant_chunk_ids": [
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "expected_answer": "They consist mainly of ice particles, rocky debris, and dust."
+    },
+    {
+      "id": "A085",
+      "topic": "space_exploration",
+      "query": "What does a light-year measure?",
+      "relevant_chunk_ids": [
+        137,
+        138,
+        139
+      ],
+      "expected_answer": "A light-year measures distance: the distance light travels through a vacuum in one year, about 9.46 trillion kilometers."
+    },
+    {
+      "id": "A086",
+      "topic": "space_exploration",
+      "query": "What is an event horizon in the context of a black hole?",
+      "relevant_chunk_ids": [
+        139,
+        140
+      ],
+      "expected_answer": "It is the boundary within which gravity is so strong that nothing, including light, can escape."
+    },
+    {
+      "id": "A087",
+      "topic": "space_exploration",
+      "query": "How can scientists detect black holes if light cannot escape from inside the event horizon?",
+      "relevant_chunk_ids": [
+        139,
+        140
+      ],
+      "expected_answer": "They can observe black holes' gravitational effects on nearby matter and stars."
+    },
+    {
+      "id": "A088",
+      "topic": "space_exploration",
+      "query": "What type of light does the James Webb Space Telescope primarily observe?",
+      "relevant_chunk_ids": [
+        140,
+        141,
+        142
+      ],
+      "expected_answer": "It primarily observes infrared light."
+    },
+    {
+      "id": "A089",
+      "topic": "space_exploration",
+      "query": "What is the International Space Station used for?",
+      "relevant_chunk_ids": [
+        140,
+        141,
+        142,
+        143
+      ],
+      "expected_answer": "It is a habitable research laboratory where astronauts conduct experiments in areas such as biology, physics, materials science, and microgravity."
+    },
+    {
+      "id": "A090",
+      "topic": "space_exploration",
+      "query": "Name two technologies or services that benefit from space exploration.",
+      "relevant_chunk_ids": [
+        142,
+        143
+      ],
+      "expected_answer": "Space exploration contributes to communication, navigation, weather forecasting, and Earth observation."
+    },
+    {
+      "id": "A091",
+      "topic": "weather_and_climate_systems",
+      "query": "How do weather and climate differ in timescale?",
+      "relevant_chunk_ids": [
+        144,
+        145
+      ],
+      "expected_answer": "Weather describes short-term atmospheric conditions; climate describes long-term patterns and statistics, often across decades."
+    },
+    {
+      "id": "A092",
+      "topic": "weather_and_climate_systems",
+      "query": "Which gases make up most of dry air?",
+      "relevant_chunk_ids": [
+        145,
+        146,
+        147
+      ],
+      "expected_answer": "Nitrogen and oxygen make up most of dry air."
+    },
+    {
+      "id": "A093",
+      "topic": "weather_and_climate_systems",
+      "query": "Why does land heating faster than the ocean matter for weather?",
+      "relevant_chunk_ids": [
+        147,
+        148,
+        149
+      ],
+      "expected_answer": "Different heating rates contribute to coastal breezes and larger-scale circulation patterns."
+    },
+    {
+      "id": "A094",
+      "topic": "weather_and_climate_systems",
+      "query": "What is air pressure, and how does it help drive wind?",
+      "relevant_chunk_ids": [
+        147,
+        148,
+        149,
+        150
+      ],
+      "expected_answer": "Air pressure is the force exerted by the weight of air; pressure differences help drive wind."
+    },
+    {
+      "id": "A095",
+      "topic": "weather_and_climate_systems",
+      "query": "What are evaporation, condensation, and precipitation in the water cycle?",
+      "relevant_chunk_ids": [
+        149,
+        150,
+        151,
+        152
+      ],
+      "expected_answer": "Evaporation turns liquid water into vapor, condensation helps form clouds, and precipitation returns water to the surface."
+    },
+    {
+      "id": "A096",
+      "topic": "weather_and_climate_systems",
+      "query": "Why do some clouds produce no precipitation?",
+      "relevant_chunk_ids": [
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "expected_answer": "Particles may not grow large enough, or atmospheric conditions may not allow them to reach the ground."
+    },
+    {
+      "id": "A097",
+      "topic": "weather_and_climate_systems",
+      "query": "What atmospheric conditions can help a thunderstorm develop?",
+      "relevant_chunk_ids": [
+        152,
+        153,
+        154,
+        155
+      ],
+      "expected_answer": "Warm, moist air rising rapidly in an unstable atmosphere can help a thunderstorm develop."
+    },
+    {
+      "id": "A098",
+      "topic": "weather_and_climate_systems",
+      "query": "What is the greenhouse effect?",
+      "relevant_chunk_ids": [
+        154,
+        155,
+        156,
+        157
+      ],
+      "expected_answer": "Atmospheric gases absorb and emit infrared radiation, warming Earth's surface and lower atmosphere compared with a planet without these gases."
+    },
+    {
+      "id": "A099",
+      "topic": "weather_and_climate_systems",
+      "query": "Name two possible effects of climate change described in the document.",
+      "relevant_chunk_ids": [
+        155,
+        156,
+        157
+      ],
+      "expected_answer": "Effects can include sea-level change, heat extremes, rainfall changes, ecosystem impacts, and changes in some weather hazards."
+    },
+    {
+      "id": "A100",
+      "topic": "weather_and_climate_systems",
+      "query": "Why does forecast uncertainty generally increase farther into the future?",
+      "relevant_chunk_ids": [
+        157,
+        158,
+        159
+      ],
+      "expected_answer": "The atmosphere is complex, and small differences in initial conditions can grow over time."
+    }
+  ],
+  "unanswerable_queries": [
+    {
+      "id": "U001",
+      "query": "What was the final score of the 2026 FIFA World Cup final?",
+      "reason_unanswerable": "The corpus contains no FIFA World Cup results.",
+      "expected_behavior": "The system should state that the answer is not available in the provided documents."
+    },
+    {
+      "id": "U002",
+      "query": "What is the current market price of Arabica coffee per kilogram in India today?",
+      "reason_unanswerable": "The corpus gives no current market prices.",
+      "expected_behavior": "The system should not invent a current price."
+    },
+    {
+      "id": "U003",
+      "query": "What will the weather be in Kakinada at 4 PM tomorrow?",
+      "reason_unanswerable": "The corpus explains general weather and forecasting but contains no live local forecast.",
+      "expected_behavior": "The system should say the provided documents cannot answer a live forecast question."
+    },
+    {
+      "id": "U004",
+      "query": "Who won the most recent Olympic men's 100-metre final?",
+      "reason_unanswerable": "No Olympic results are included.",
+      "expected_behavior": "The system should abstain rather than guess."
+    },
+    {
+      "id": "U005",
+      "query": "What is the population of Amaravati in 2026?",
+      "reason_unanswerable": "The corpus has no city population statistics.",
+      "expected_behavior": "The system should say the information is absent."
+    },
+    {
+      "id": "U006",
+      "query": "Which coffee shop has the highest customer rating in Vijayawada today?",
+      "reason_unanswerable": "No local business listings or live ratings are included.",
+      "expected_behavior": "The system should not invent a shop or rating."
+    },
+    {
+      "id": "U007",
+      "query": "What is the exact current temperature on the surface of Mars?",
+      "reason_unanswerable": "The corpus discusses Mars generally but gives no current surface temperature.",
+      "expected_behavior": "The system should state that the exact current value is unavailable."
+    },
+    {
+      "id": "U008",
+      "query": "What is the current price of copper per tonne on the London Metal Exchange?",
+      "reason_unanswerable": "The materials document describes conductivity but no current commodity prices.",
+      "expected_behavior": "The system should not provide an unsupported live price."
+    },
+    {
+      "id": "U009",
+      "query": "What is the name of the archaeologist who discovered the oldest human fossil in 2025?",
+      "reason_unanswerable": "The corpus contains no such specific discovery or researcher.",
+      "expected_behavior": "The system should say the documents do not provide this information."
+    },
+    {
+      "id": "U010",
+      "query": "How many active internet users are online in India right now?",
+      "reason_unanswerable": "The computing document contains no live internet-user statistics.",
+      "expected_behavior": "The system should abstain from a live statistic."
+    },
+    {
+      "id": "U011",
+      "query": "What is the exact load limit in tonnes for the bridge nearest to my current location?",
+      "reason_unanswerable": "The corpus gives general structural concepts but no specific local bridge data.",
+      "expected_behavior": "The system should not infer a real bridge's load limit."
+    },
+    {
+      "id": "U012",
+      "query": "Which animal species has the longest migration distance ever recorded, and what was the exact distance?",
+      "reason_unanswerable": "The animal document describes migration generally but gives no record-holder or distance.",
+      "expected_behavior": "The system should say the exact record is not in the corpus."
+    },
+    {
+      "id": "U013",
+      "query": "What is tomorrow's official rainfall probability for Hyderabad?",
+      "reason_unanswerable": "The weather document explains forecasts generally but contains no live forecast.",
+      "expected_behavior": "The system should not fabricate a forecast probability."
+    },
+    {
+      "id": "U014",
+      "query": "What is the pH of the water in the user's kitchen tap right now?",
+      "reason_unanswerable": "The chemistry document explains pH but contains no measurement of the user's water.",
+      "expected_behavior": "The system should say this requires a measurement."
+    },
+    {
+      "id": "U015",
+      "query": "Which company currently has the fastest public DNS resolver in India?",
+      "reason_unanswerable": "The computing document explains DNS but contains no current comparative benchmark.",
+      "expected_behavior": "The system should not invent a ranking."
+    },
+    {
+      "id": "U016",
+      "query": "What is the exact number of coral species alive in the ocean today?",
+      "reason_unanswerable": "The ocean document discusses reefs but gives no total species count.",
+      "expected_behavior": "The system should say the exact count is not provided."
+    },
+    {
+      "id": "U017",
+      "query": "What will be the global average temperature in the year 2100 to two decimal places?",
+      "reason_unanswerable": "The climate document describes impacts but gives no specific numerical projection.",
+      "expected_behavior": "The system should explain that this exact value cannot be derived from the corpus."
+    },
+    {
+      "id": "U018",
+      "query": "Which bridge design is cheapest for a 2.7-kilometre crossing at a specific site in India?",
+      "reason_unanswerable": "The bridge document explains design types but gives no site-specific engineering study or cost data.",
+      "expected_behavior": "The system should not claim one design is cheapest without site data."
+    },
+    {
+      "id": "U019",
+      "query": "What is the latest version number of Python released this week?",
+      "reason_unanswerable": "The computing document contains no current software release information.",
+      "expected_behavior": "The system should not guess a current version."
+    },
+    {
+      "id": "U020",
+      "query": "How much caffeine, in milligrams, is in the exact cup of coffee I drank this morning?",
+      "reason_unanswerable": "The coffee document gives general caffeine information but no measurement of the user's drink.",
+      "expected_behavior": "The system should state that the exact amount is not available."
+    }
+  ]
+}
