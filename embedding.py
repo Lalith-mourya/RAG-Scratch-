@@ -2,7 +2,7 @@ import logging
 from sentence_transformers import SentenceTransformer
 
 logger = logging.getLogger(__name__)
-model = SentenceTransformer("BAAI/bge-small-en-v1.5")
+model = SentenceTransformer("nomic-ai/nomic-embed-text-v1.5")
 
 
 def EMBEDDING(chunks):
