@@ -48,7 +48,7 @@ def load_docs():
 documents = load_docs()
 
 
-def chunk_documents(documents, chunk_size=500, overlap=100):
+def chunk_documents(documents, chunk_size=500, overlap=50):
     chunk_docs = []
     chunk_id = 1
     logger.info("Started chunking")
@@ -81,7 +81,7 @@ logger.info("Retriever Evaluation getting started with the golden dataset")
 evaluate_retriever(
     embedded_chunks=embedded_chunks,
     retrieve_fn=retriever,
-    dataset_path=BASE_DIR / "rag_retriever_golden_dataset_v1.json",
+    dataset_path=BASE_DIR / "golden_dataset_500_50.json",
     k=4
 )
 
